@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --mobile-breakpoint: 375px;
+    --desktop-breakpoint: 1440px;
+
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    --fs-base: 15px;
+
+    --font-wegiht-heading: 700;
+    --font-wegiht-paragraph: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--fs-base);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-base);
+    color: var(--grayish-blue);
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: var(--font-wegiht-heading);
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: var(--fs-base);
+    font-weight: var(--font-wegiht-paragraph);
+    color: var(--grayish-blue);
+}
+
+.container {
+    max-width: 350px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: var(--fs-base);
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-content h1 {
+    margin-bottom: 1rem;
+}
